@@ -1,0 +1,30 @@
+
+
+<!--En la pagina que va la coleccion-->
+<script type="text/javascript">
+ $(document).ready(function () {
+   Cajas.resize('.product-search .interno');
+   Cajas.imagen('.product-search .interno');
+   $(window).resize(function() {
+     Cajas.clear('.product-search .interno');
+     Cajas.resize('.product-search .interno');
+   });
+ });
+</script>
+
+
+<!--Columna-->
+<div class="col-xs-6 col-md-4 product-search">
+  <!--Caja interna-->
+  <div class="interno">
+    <!--caja que contiene la imagen-->
+    <div class="foto center-block">
+      <img> <!--imagen-->
+    </div>
+    <!--caja que contiene la descripción-->
+    <div class="caja-col-text">
+      <p><!--aqui va la descripcion--></p>
+    </div>
+  </div>
+</div>
+
